@@ -6,8 +6,12 @@ var image_1 = require("next/image");
 var Walmart_Logo_White_png_1 = require("../assets/Images/Walmart Logo White.png");
 var lucide_react_1 = require("lucide-react");
 var navigation_1 = require("next/navigation");
+var store_1 = require("@/store");
+var getCartTotal_1 = require("@/lib/getCartTotal");
 function Header() {
     var router = navigation_1.useRouter();
+    var cart = store_1.useCartStore(function (state) { return state.cart; });
+    var total = getCartTotal_1.getCartTotal(cart);
     var handleSubmit = function (e) {
         e.preventDefault();
         var inputE = e.currentTarget.elements.input;
@@ -39,10 +43,10 @@ function Header() {
                 React.createElement("div", null,
                     React.createElement("p", { className: "text-xs font-extralight" }, "Sign In"),
                     React.createElement("p", null, "Account"))),
-            React.createElement(link_1["default"], { href: "/", className: "flex text-white font-bold item-center space-x-2 text-sm" },
+            React.createElement(link_1["default"], { href: "/basket", className: "flex text-white font-bold item-center space-x-2 text-sm" },
                 React.createElement(lucide_react_1.ShoppingCart, { size: 20 }),
                 React.createElement("div", null,
-                    React.createElement("p", { className: "text-xs font-extralight" }, "No Items"),
-                    React.createElement("p", null, "$0.00"))))));
+                    React.createElement("p", { className: "text-xs font-extralight" }, cart.length > 0 ? cart.length + " items" : "No items"),
+                    React.createElement("p", null, cart.length > 0 ? "" + total : "0"))))));
 }
 exports["default"] = Header;
