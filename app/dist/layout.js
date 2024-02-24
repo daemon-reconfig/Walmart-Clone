@@ -2,7 +2,7 @@
 exports.__esModule = true;
 exports.metadata = void 0;
 var google_1 = require("next/font/google");
-require("./globals.css");
+require("./global.css");
 var Header_1 = require("@/components/Header");
 var inter = google_1.Inter({ subsets: ["latin"] });
 exports.metadata = {
@@ -10,10 +10,12 @@ exports.metadata = {
     description: "Created by daemon"
 };
 function RootLayout(_a) {
-    var children = _a.children;
+    var children = _a.children, modal = _a.modal;
     return (React.createElement("html", { lang: "en" },
         React.createElement("body", { className: inter.className },
             React.createElement(Header_1["default"], null),
-            children)));
+            React.createElement("div", { className: "flex" },
+                modal,
+                children))));
 }
 exports["default"] = RootLayout;
