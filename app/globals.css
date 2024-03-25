@@ -2,44 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 @layer components {
   .grid-option {
     @apply rounded-md p-5 h-full col-span-1 hover:opacity-75 border-white border-2 hover:border-walmart
-=======
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
->>>>>>> a4a3aaa (Initial commit from Create Next App)
-=======
-@layer components {
-  .grid-option {
-    @apply rounded-md p-5 h-full col-span-1 hover:opacity-75 border-white border-2 hover:border-walmart
->>>>>>> 38b111d (dammn)
   }
 }
