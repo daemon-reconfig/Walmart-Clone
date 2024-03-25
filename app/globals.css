@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @layer components {
   .grid-option {
     @apply rounded-md p-5 h-full col-span-1 hover:opacity-75 border-white border-2 hover:border-walmart
@@ -35,5 +36,10 @@ body {
   .text-balance {
     text-wrap: balance;
 >>>>>>> a4a3aaa (Initial commit from Create Next App)
+=======
+@layer components {
+  .grid-option {
+    @apply rounded-md p-5 h-full col-span-1 hover:opacity-75 border-white border-2 hover:border-walmart
+>>>>>>> 38b111d (dammn)
   }
 }

@@ -10,12 +10,17 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "@radix-ui/react-dialog": "^1.0.5",
+>>>>>>> 38b111d (dammn)
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "embla-carousel-react": "^8.0.0",
     "lucide-react": "^0.336.0",
     "next": "14.1.0",
+<<<<<<< HEAD
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.1",
@@ -34,20 +39,31 @@
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
 =======
+=======
+    "punycode": "^2.3.1",
+>>>>>>> 38b111d (dammn)
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7",
+    "webpack": "^4.47.0",
+    "zustand": "^4.5.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
+    "@types/node-fetch": "^2.6.11",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
+<<<<<<< HEAD
     "eslint-config-next": "14.1.0"
 >>>>>>> a4a3aaa (Initial commit from Create Next App)
+=======
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+>>>>>>> 38b111d (dammn)
   }
 }
