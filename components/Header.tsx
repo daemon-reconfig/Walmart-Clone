@@ -22,7 +22,7 @@ function Header() {
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const inputE = e.currentTarget.elements.input as HTMLInputElement;
+        const inputE = e.currentTarget.elements.namedItem('input') as HTMLInputElement;
         const input = inputE.value;
         router.push(`/search?q=${input}`);
         console.log({input});
